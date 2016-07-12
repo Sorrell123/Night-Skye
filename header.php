@@ -26,12 +26,6 @@
       <h1><a href="<?php echo get_option("home"); ?>"><?php bloginfo("name"); ?></a></h1>
     </div><!--close welcome-->
       <div id="menu_items">
-      <ul id="menu">
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="ourwork.html">Our Work</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div><!--close menu-->
-    </div><!--close menubar-->  
+      <?php pw_nav_menu(); ?>
+    </div><!--close menu-->
+  </div><!--close menubar-->  
