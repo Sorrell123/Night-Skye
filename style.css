@@ -18,7 +18,7 @@ html
 
 body
 { font: normal 85% Arial, Helvetica, sans-serif;
-  background: #1d1d1d url(../images/background.jpg) repeat;
+  background: #1d1d1d url(images/background.jpg) repeat;
   color: #fff;
 }
 
@@ -131,7 +131,7 @@ ul#menu li a
   padding: 16px 15px 10px 15px;
   background: transparent; } 
   
-ul#menu li.current a, ul#menu li:hover a
+ul#menu li.current-menu-item a, ul#menu li:hover a
 { color: #C56B85;
   text-shadow: 1px 1px #000;}
 
@@ -462,4 +462,3 @@ a.nivo-nextNav {
 .nivo-controlNav a.active {
     background-position: 0 -22px;
 }
- 
