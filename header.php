@@ -41,10 +41,9 @@
       <div id="slider-wrapper">        
         <div id="slider" class="nivoSlider">
           <!--
-            Tu petla po wszystkich obrazkach w katalogu home-images w wp_uploads_dir.
-          -->
           <img src="<?php bloginfo("template_url"); ?>/images/home_1.jpg" alt="" />
           <img src="<?php bloginfo("template_url"); ?>/images/home_2.jpg" alt="" />
+          -->
           <?php
 
           $args = array(
@@ -56,12 +55,13 @@
               ); 
           $attachments = get_posts($args);
           if ($attachments) {
-              foreach ($attachments as $post) {
-                  setup_postdata($post); // pewnie ustawia że funkcje poniżej działają działa
-                  if(get_the_title() == "home-image"){
-                    the_attachment_link($post->ID, false);
-                  }
+            foreach ($attachments as $post) {
+              setup_postdata($post); // pewnie ustawia że funkcje poniżej działają 
+              if(get_the_title() == "slider-image"){
+                $sliderPicture = wp_get_attachment_url($post->ID);
+                echo '<img src="'.$sliderPicture.'" alt="" />'; //pokazanie jak pisać kod php wewnątrz tag który jet wewnątrz php
               }
+            }
           }
 
           ?>
