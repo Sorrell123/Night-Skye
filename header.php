@@ -40,10 +40,6 @@
     <div id="banner_image">
       <div id="slider-wrapper">        
         <div id="slider" class="nivoSlider">
-          <!--
-          <img src="<?php bloginfo("template_url"); ?>/images/home_1.jpg" alt="" />
-          <img src="<?php bloginfo("template_url"); ?>/images/home_2.jpg" alt="" />
-          -->
           <?php
 
           $args = array(

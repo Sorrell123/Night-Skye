@@ -425,7 +425,7 @@ ul#menu li.current-menu-item a, ul#menu li:hover a
     display: none;
 }
 .nivo-directionNav a {
-    background: url("../images/arrows.png") no-repeat scroll 0 0 transparent;
+    background: url("images/arrows.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     display: block;
     height: 30px;
@@ -449,7 +449,7 @@ a.nivo-nextNav {
     position: absolute;
 }
 .nivo-controlNav a {
-    background: url("../images/bullets.png") no-repeat scroll 0 0 transparent;
+    background: url("images/bullets.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     float: left;
     height: 22px;
