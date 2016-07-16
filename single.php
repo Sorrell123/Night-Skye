@@ -15,3 +15,4 @@
 		</div><!--close content_item-->
 	</div><!--close content--> 	
 <?php get_footer(); ?>
+
