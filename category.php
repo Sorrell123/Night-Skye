@@ -1,14 +1,11 @@
 <?php get_header(); ?>
-
 <?php get_sidebar(); ?>
 
 	<div id="content">
 		<div class="content_item">
-			<?php dynamic_sidebar("title-sidebar"); ?> 
+		<h2><?php single_cat_title("Latest ",true);?></h2>
 
-			<?php query_posts('showposts=4&paged=1'); ?> <!-- limit wyświetlonych postów na stronie i któa wuświetlona jest strona jkaby było więcej postów -->
-
-			<?php while(have_posts()) : the_post(); ?> 
+			<?php while(have_posts()) : the_post(); ?>
 
 				<div class="content_container">
 					<?php the_excerpt(); ?>
@@ -19,7 +16,6 @@
 
 			<?php endwhile ?>  
 		</div><!--close content_item-->
-	</div><!--close content--> 	
-		
+	</div><!--close content--> 
 
 <?php get_footer(); ?>
